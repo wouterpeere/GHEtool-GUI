@@ -4,13 +4,13 @@ from sys import setrecursionlimit
 import numpy as np
 
 from GHEtool import FOLDER
-from GHEtool.gui.data_2_borefield_func import _create_monthly_loads_peaks
-from GHEtool.gui.gui_structure import load_data_GUI
+from GHEtoolGUI.data_2_borefield_func import _create_monthly_loads_peaks
+from GHEtoolGUI.gui_structure import load_data_GUI
 from ScenarioGUI import load_config
 
-from GHEtool.gui.test_gui.starting_closing_tests import close_tests, start_tests
+from GHEtoolGUI.test_gui.starting_closing_tests import close_tests, start_tests
 
-load_config(Path(__file__).parent.joinpath("gui_config.ini"))
+load_config(Path(__file__).parent.parent.joinpath("gui_config.ini"))
 
 setrecursionlimit(1500)
 

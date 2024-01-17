@@ -156,7 +156,7 @@ def test_backward_compatibility(qtbot):
         bot for the GUI
     """
     import numpy as np
-    from GHEtool import FOLDER
+    from GHEtoolGUI import FOLDER
     # check results None works
     # init gui window
     main_window = start_tests(qtbot)
@@ -196,7 +196,7 @@ def test_backward_compatibility(qtbot):
     close_tests(main_window_new, qtbot)
     close_tests(main_window_old, qtbot)
     main_window_new = start_tests(qtbot)
-    main_window_new._load_from_data(f'{FOLDER}/gui/test_gui/test_file_version_999_1_1.GHEtool')
+    main_window_new._load_from_data(f'{FOLDER}/test_gui/test_file_version_999_1_1.GHEtool')
     assert main_window_new.status_bar.label.text() == main_window_new.translations.cannot_load_new_version[0]
     close_tests(main_window_new, qtbot)
 

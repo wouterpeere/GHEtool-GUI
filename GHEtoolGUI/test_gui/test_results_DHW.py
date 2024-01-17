@@ -1,5 +1,5 @@
-from GHEtool import FOLDER
-from GHEtool.gui.test_gui.starting_closing_tests import close_tests, start_tests
+from GHEtoolGUI import FOLDER
+from GHEtoolGUI.test_gui.starting_closing_tests import close_tests, start_tests
 
 
 def test_results_DHW(qtbot):

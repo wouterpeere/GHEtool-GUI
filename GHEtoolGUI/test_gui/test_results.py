@@ -7,15 +7,16 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from GHEtool import Borefield, FOLDER, FluidData, GroundConstantTemperature, GroundFluxTemperature, GroundTemperatureGradient, MonthlyGeothermalLoadAbsolute, MultipleUTube
-from GHEtool.gui.data_2_borefield_func import data_2_borefield
-from GHEtool.gui.gui_structure import GuiStructure
+from GHEtool import Borefield, FluidData, GroundConstantTemperature, GroundFluxTemperature, GroundTemperatureGradient, MonthlyGeothermalLoadAbsolute, MultipleUTube
+from GHEtoolGUI.data_2_borefield_func import data_2_borefield
+from GHEtoolGUI.gui_structure import GuiStructure
+from GHEtoolGUI import FOLDER
 from ScenarioGUI import load_config
 import pygfunction as gt
 
-from GHEtool.gui.test_gui.starting_closing_tests import close_tests, start_tests
+from GHEtoolGUI.test_gui.starting_closing_tests import close_tests, start_tests
 
-load_config(Path(__file__).parent.joinpath("gui_config.ini"))
+load_config(Path(__file__).parent.parent.joinpath("gui_config.ini"))
 
 sys.setrecursionlimit(1500)
 
@@ -284,7 +285,7 @@ def test_import_borefield_data(qtbot):
     assert main_window.status_bar.label.text() == main_window.translations.no_file_selected[main_window.gui_structure.option_language.get_value()[0]]
 
     main_window.gui_structure.aim_custom.widget.click()
-    file = f"{FOLDER.joinpath('gui/test_gui/borefield_data.csv')}"
+    file = f"{FOLDER.joinpath('test_gui/borefield_data.csv')}"
     main_window.gui_structure.borefield_file.set_value(file)
     main_window.gui_structure.option_seperator_borefield.set_value(1)
     main_window.gui_structure.option_decimal_borefield.set_value(0)
@@ -296,7 +297,7 @@ def test_import_borefield_data(qtbot):
 
     main_window.gui_structure.custom_borefield.set_value([(0, 0 ,10, 4, 0.05)])
 
-    file = f"{FOLDER.joinpath('gui/test_gui/borefield_data.txt')}"
+    file = f"{FOLDER.joinpath('test_gui/borefield_data.txt')}"
     main_window.gui_structure.borefield_file.set_value(file)
     main_window.gui_structure.option_seperator_borefield.set_value(2)
     main_window.gui_structure.option_decimal_borefield.set_value(1)

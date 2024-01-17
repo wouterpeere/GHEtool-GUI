@@ -6,9 +6,9 @@ from pathlib import Path
 
 from ScenarioGUI import load_config
 
-from GHEtool.gui.test_gui.starting_closing_tests import close_tests, start_tests
+from GHEtoolGUI.test_gui.starting_closing_tests import close_tests, start_tests
 
-load_config(Path(__file__).parent.joinpath("gui_config.ini"))
+load_config(Path(__file__).parent.parent.joinpath("gui_config.ini"))
 
 sys.setrecursionlimit(1500)
 
