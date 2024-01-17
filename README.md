@@ -32,8 +32,8 @@ For the tests
 
 ## License
 
-*GHEtool* is licensed under the terms of the 3-clause BSD-license.
-See [GHEtool license](LICENSE).
+*GHEtool GUI* is licensed under the terms of the 3-clause BSD-license.
+See [GHEtool GUI license](LICENSE).
 
 ## Citation
 Please cite this GHEtool GUI using the JOSS paper.

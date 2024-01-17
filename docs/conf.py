@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'GHEtool'
+project = 'GHEtool GUI'
 copyright = f'{datetime.datetime.now().year}, Wouter Peere and Tobias Blanke'
 author = 'Wouter Peere and Tobias Blanke'
 
