@@ -1,2 +1,41 @@
-# GHEtool-GUI
-GHEtool GUI
+# GHEtool GUI
+
+[![Tests](https://github.com/wouterpeere/GHEtool/actions/workflows/test.yml/badge.svg)](https://github.com/wouterpeere/GHEtool/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/wouterpeere/GHEtool/branch/main/graph/badge.svg?token=I9WWHW60OD)](https://codecov.io/gh/wouterpeere/GHEtool)
+[![Read the Docs](https://readthedocs.org/projects/ghetool/badge/?version=latest)](https://ghetool.readthedocs.io/en/latest/)
+
+## What is GHEtool GUI?
+
+This repository contains a Graphical User Interface for the python package [GHEtool](https://github.com/wouterpeere/GHEtool).
+It is an open-source alternative for the professional version of GHEtool, which can be found on the website [https://ghetool.eu](https://ghetool.eu).
+This GUI is built using [ScenarioGUI](https://github.com/tblanke/ScenarioGUI) and can be downloaded as an executable [here](https://ghetool.eu/wp-content/uploads/setups/GHEtool%20Community_setup_v2_2_0.exe).
+
+**Please note that this version is developed and maintained by the community and has no official support from the developers of GHEtool Pro.**
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/wouterpeere/GHEtool/main/docs/sources/gui/_figure/GHEtool.PNG" width="600">
+</p>
+
+## Development
+This open-source graphical user interface is maintained by the community of users and welcomes also your contribution!
+Below you can find the requirements of GHEtool GUI and in the read
+
+### Requirements
+This code is tested with Python 3.10 and requires the following libraries (the versions mentioned are the ones with which the code is tested)
+
+* GHEtool (>=2.2.1)
+* ScenarioGUI (>=0.3.0)
+
+For the tests
+
+* Pytest (>=7.1.2)
+
+## License
+
+*GHEtool* is licensed under the terms of the 3-clause BSD-license.
+See [GHEtool license](LICENSE).
+
+## Citation
+Please cite this GHEtool GUI using the JOSS paper.
+
+Peere, W., Blanke, T.(2022). GHEtool: An open-source tool for borefield sizing in Python. _Journal of Open Source Software, 7_(76), 4406, https://doi.org/10.21105/joss.04406
