@@ -1,8 +1,8 @@
 # GHEtool GUI
 
-[![Tests](https://github.com/wouterpeere/GHEtool-GUI/actions/workflows/test.yml/badge.svg)](https://github.com/wouterpeere/GHEtool/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/wouterpeere/GHEtool-GUI/branch/main/graph/badge.svg?token=I9WWHW60OD)](https://codecov.io/gh/wouterpeere/GHEtool)
-[![Read the Docs](https://readthedocs.org/projects/ghetool-GUI/badge/?version=latest)](https://ghetool.readthedocs.io/en/latest/)
+[![Tests](https://github.com/wouterpeere/GHEtool-GUI/actions/workflows/test.yml/badge.svg)](https://github.com/wouterpeere/GHEtool-GUI/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/wouterpeere/GHEtool-GUI/branch/main/graph/badge.svg?token=I9WWHW60OD)](https://codecov.io/gh/wouterpeere/GHEtool-GUI)
+[![Read the Docs](https://readthedocs.org/projects/ghetool-GUI/badge/?version=latest)](https://ghetool-gui.readthedocs.io/en/latest/)
 
 ## What is GHEtool GUI?
 
