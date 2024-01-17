@@ -21,8 +21,7 @@ jobs:
           pip install -e .
       - name: Test with pytest
         run: pytest GHEtoolGUI/test_gui --cov=./ --cov-report=xml
-      - name: Upload Coverage to Codecov
+      - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
-        with:
-          files: ./coverage.xml
-          token: 8e6f48b5-8534-4f9a-894b-0a2d226dab26 # not required for public repos
+        env:
+            CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
