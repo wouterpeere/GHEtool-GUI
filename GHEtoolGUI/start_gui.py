@@ -28,10 +28,10 @@ def run(path_list=None):  # pragma: no cover
     from PySide6.QtWidgets import QApplication as QtWidgets_QApplication
     from PySide6.QtWidgets import QMainWindow as QtWidgets_QMainWindow
     from GHEtool import Borefield
-    from data_2_borefield_func import data_2_borefield
-    from gui_classes.translation_class import Translations
-    from gui_structure import GUI
-    from gui_classes.gui_combine_window import MainWindow
+    from GHEtoolGUI.data_2_borefield_func import data_2_borefield
+    from GHEtoolGUI.gui_classes.translation_class import Translations
+    from GHEtoolGUI.gui_structure import GUI
+    from GHEtoolGUI.gui_classes.gui_combine_window import MainWindow
     import ScenarioGUI.global_settings as globs
 
     if is_frozen:
