@@ -1,8 +1,8 @@
 # GHEtool GUI
 
 [![Tests](https://github.com/wouterpeere/GHEtool-GUI/actions/workflows/test.yml/badge.svg)](https://github.com/wouterpeere/GHEtool-GUI/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/wouterpeere/GHEtool-GUI/branch/main/graph/badge.svg?token=I9WWHW60OD)](https://codecov.io/gh/wouterpeere/GHEtool-GUI)
-[![Read the Docs](https://readthedocs.org/projects/ghetool-GUI/badge/?version=latest)](https://ghetool-gui.readthedocs.io/en/latest/)
+[![codecov](https://codecov.io/gh/wouterpeere/GHEtool-GUI/graph/badge.svg?token=uf1owumb25)](https://codecov.io/gh/wouterpeere/GHEtool-GUI)
+[![Documentation Status](https://readthedocs.org/projects/ghetool-gui/badge/?version=latest)](https://ghetool-gui.readthedocs.io/en/latest/?badge=latest)
 
 ## What is GHEtool GUI?
 
@@ -13,7 +13,7 @@ This GUI is built using [ScenarioGUI](https://github.com/tblanke/ScenarioGUI) an
 **Please note that this version is developed and maintained by the community and has no official support from the developers of GHEtool Pro.**
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/wouterpeere/GHEtool/main/docs/sources/gui/_figure/GHEtool.PNG" width="600">
+<img src="https://raw.githubusercontent.com/wouterpeere/GHEtool/main/docs/GHEtool.png" width="600">
 </p>
 
 ## Development
@@ -24,7 +24,7 @@ structure and executable-creation can be found on our [readthedocs](https://ghet
 ### Requirements
 This code is tested with Python 3.10 and requires the following libraries (the versions mentioned are the ones with which the code is tested)
 
-* GHEtool (>=2.2.1)
+* GHEtool (=2.2.0)
 * ScenarioGUI (>=0.3.0)
 
 For the tests
