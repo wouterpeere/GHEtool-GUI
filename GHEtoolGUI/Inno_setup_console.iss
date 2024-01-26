@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define LinkToGHEtool "C:\Users\"
-#define MyAppName "GHEtool"
+#define MyAppName "GHEtool OS"
 #define MyAppVersion "2.2.0"
 #define MyAppPublisher "Me"
-#define MyAppURL "https://github.com/wouterpeere/GHEtoolGUI"
-#define MyAppExeName "GHEtool Community.exe"
+#define MyAppURL "https://github.com/wouterpeere/GHEtool-GUI"
+#define MyAppExeName "GHEtool.exe"
 #define MyAppAssocName MyAppName + "-file"
 #define MyAppAssocExt ".GHEtool"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
@@ -14,7 +14,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{02CA2AAF-0031-4878-8115-63795762ED75}
+AppId={{7739AF41-EB6B-46A5-B76F-871A9E6D69DC}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}

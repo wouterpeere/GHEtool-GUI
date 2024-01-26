@@ -13,7 +13,7 @@ This GUI is built using [ScenarioGUI](https://github.com/tblanke/ScenarioGUI) an
 **Please note that this version is developed and maintained by the community and has no official support from the developers of GHEtool Pro.**
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/wouterpeere/GHEtool/main/docs/GHEtool.png" width="600">
+<img src="https://raw.githubusercontent.com/wouterpeere/GHEtool-GUI/main/docs/GHEtool.png" width="600">
 </p>
 
 ## Development
