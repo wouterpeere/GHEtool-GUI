@@ -38,9 +38,7 @@ def data_2_borefield(ds: DataStorage) -> tuple[Borefield, partial[[], None]]:
     from GHEtool import Borefield
 
     # create the bore field object
-    borefield = Borefield(
-        gui=True,
-    )
+    borefield = Borefield()
     _set_boreholes(ds, borefield)
     # set temperature boundaries
     borefield.set_max_avg_fluid_temperature(ds.option_max_temp)  # maximum temperature
