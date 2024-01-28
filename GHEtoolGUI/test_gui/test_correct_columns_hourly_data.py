@@ -8,7 +8,6 @@ from GHEtoolGUI.gui_classes.gui_combine_window import MainWindow
 from GHEtoolGUI.gui_classes.translation_class import Translations
 from GHEtoolGUI.gui_structure import GUI
 from GHEtoolGUI.data_2_borefield_func import data_2_borefield
-from GHEtoolGUI import FOLDER
 from GHEtoolGUI.data_2_borefield_func import _create_monthly_loads_peaks
 from GHEtoolGUI.gui_structure import load_data_GUI
 from ScenarioGUI import load_config
@@ -28,7 +27,7 @@ def test_correct_columns_hourly_data(qtbot):
     main_window.gui_structure.option_seperator_csv.set_value(0)
     main_window.gui_structure.option_source_ground_temperature.set_value(0)
 
-    main_window.gui_structure.option_filename.set_value(f'{FOLDER}/Examples/hourly_profile.csv')
+    main_window.gui_structure.option_filename.set_value('hourly_profile.csv')
     main_window.gui_structure.option_column.set_value(1)
     main_window.gui_structure.option_cooling_column.set_value(0)
     main_window.gui_structure.option_heating_column.set_value(1)

@@ -8,6 +8,7 @@ from ScenarioGUI import load_config
 from matplotlib import pyplot as plt
 import ScenarioGUI.global_settings as globs
 import PySide6.QtWidgets as QtW
+from GHEtoolGUI.adapt_GHEtool import _plot_load_duration, _plot_temperature_profile
 
 from GHEtool import Borefield
 from GHEtoolGUI.gui_classes.gui_combine_window import MainWindow
@@ -18,6 +19,8 @@ from GHEtoolGUI.data_2_borefield_func import data_2_borefield
 load_config(Path(__file__).absolute().parent.parent.joinpath("./gui_config.ini"))
 MainWindow.TEST_MODE = True
 
+Borefield._plot_temperature_profile = _plot_temperature_profile
+Borefield._plot_load_duration = _plot_load_duration
 
 def start_tests(qtbot) -> MainWindow:
     _backup_filename: str = f"backup.{globs.FILE_EXTENSION}BackUp"

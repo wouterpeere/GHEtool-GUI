@@ -3,7 +3,6 @@ from sys import setrecursionlimit
 
 import numpy as np
 
-from GHEtool import FOLDER
 from GHEtoolGUI.data_2_borefield_func import _create_monthly_loads_peaks
 from GHEtoolGUI.gui_structure import load_data_GUI
 from ScenarioGUI import load_config
@@ -23,8 +22,8 @@ def test_building_load(qtbot):
     main_window.gui_structure.option_seperator_csv.set_value(0)
     main_window.gui_structure.option_source_ground_temperature.set_value(0)
 
-    main_window.gui_structure.option_filename.set_value(f'{FOLDER}/Examples/hourly_profile.csv')
-    main_window.gui_structure.fun_update_combo_box_data_file(f'{FOLDER}/Examples/hourly_profile.csv')
+    main_window.gui_structure.option_filename.set_value('hourly_profile.csv')
+    main_window.gui_structure.fun_update_combo_box_data_file('hourly_profile.csv')
     main_window.gui_structure.option_column.set_value(1)
     main_window.gui_structure.option_cooling_column.set_value(1)
 

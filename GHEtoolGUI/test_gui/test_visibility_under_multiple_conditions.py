@@ -6,7 +6,6 @@ from pathlib import Path
 
 import numpy as np
 
-from GHEtool import FOLDER
 from ScenarioGUI import load_config
 
 from GHEtoolGUI.test_gui.starting_closing_tests import start_tests, close_tests
@@ -141,7 +140,7 @@ def test_visibility_peak_length(qtbot):
         assert gs.option_len_peak_cooling.is_hidden()
 
     visible()
-    main_window.gui_structure.option_filename.set_value(f'{FOLDER}/Examples/hourly_profile.csv')
+    main_window.gui_structure.option_filename.set_value('hourly_profile.csv')
 
     gs.option_temperature_profile_hourly.set_value(1)
     invisible()
@@ -379,7 +378,7 @@ def test_visibility_on_result_page(qtbot):
     """
     main_window, gs = setup(qtbot)
 
-    gs.option_filename.set_value(f'{FOLDER}/Examples/hourly_profile.csv')
+    gs.option_filename.set_value('hourly_profile.csv')
 
     # scenario 2
     main_window.save_scenario()
