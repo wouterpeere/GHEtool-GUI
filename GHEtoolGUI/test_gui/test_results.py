@@ -549,8 +549,8 @@ def test_temp_profile_heating_data(qtbot) -> None:
         gs.aim_temp_profile.widget.click() if not gs.aim_temp_profile.widget.isChecked() else None
 
         borefield = create_borefield(gs)
-        borefield.set_baseload_heating(heat_load)
-        borefield.set_peak_heating(heat_peak)
+        borefield.load.baseload_heating = heat_load
+        borefield.load.peak_heating = heat_peak
 
         for option, value in zip([gs.option_hl_jan, gs.option_hl_feb, gs.option_hl_mar, gs.option_hl_apr, gs.option_hl_may, gs.option_hl_jun, gs.option_hl_jul,
                                   gs.option_hl_aug, gs.option_hl_sep, gs.option_hl_oct, gs.option_hl_nov, gs.option_hl_dec], heat_load):
@@ -608,8 +608,8 @@ def test_temp_profile_cooling_data(qtbot) -> None:
             g_s.aim_temp_profile.widget.click()
 
         borefield = create_borefield(g_s)
-        borefield.set_baseload_cooling(cool_load)
-        borefield.set_peak_cooling(cool_peak)
+        borefield.load.baseload_cooling = cool_load
+        borefield.load.peak_cooling = cool_peak
 
         for option, value in zip([g_s.option_cl_jan, g_s.option_cl_feb, g_s.option_cl_mar, g_s.option_cl_apr, g_s.option_cl_may, g_s.option_cl_jun, g_s.option_cl_jul,
                                   g_s.option_cl_aug, g_s.option_cl_sep, g_s.option_cl_oct, g_s.option_cl_nov, g_s.option_cl_dec], cool_load):
