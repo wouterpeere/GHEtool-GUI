@@ -297,7 +297,7 @@ def test_import_borefield_data(qtbot):
 
     main_window.gui_structure.custom_borefield.set_value([(0, 0 ,10, 4, 0.05)])
 
-    file = 'borefield_data.txt'
+    file = f'{FOLDER}/test_gui/borefield_data.txt'
     main_window.gui_structure.borefield_file.set_value(file)
     main_window.gui_structure.option_seperator_borefield.set_value(2)
     main_window.gui_structure.option_decimal_borefield.set_value(1)
