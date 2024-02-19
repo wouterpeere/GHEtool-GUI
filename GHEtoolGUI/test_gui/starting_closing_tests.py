@@ -22,6 +22,7 @@ MainWindow.TEST_MODE = True
 Borefield._plot_temperature_profile = _plot_temperature_profile
 Borefield._plot_load_duration = _plot_load_duration
 
+
 def start_tests(qtbot) -> MainWindow:
     _backup_filename: str = f"backup.{globs.FILE_EXTENSION}BackUp"
     default_path: Path = Path(Path.home(), f"Documents/{globs.GUI_NAME}")
