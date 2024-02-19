@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 
 from GHEtool import Borefield, FluidData, GroundConstantTemperature, GroundFluxTemperature, GroundTemperatureGradient, MonthlyGeothermalLoadAbsolute, MultipleUTube
+from GHEtoolGUI import FOLDER
 from GHEtoolGUI.data_2_borefield_func import data_2_borefield
 from GHEtoolGUI.gui_structure import GuiStructure
 from ScenarioGUI import load_config
@@ -284,7 +285,7 @@ def test_import_borefield_data(qtbot):
     assert main_window.status_bar.label.text() == main_window.translations.no_file_selected[main_window.gui_structure.option_language.get_value()[0]]
 
     main_window.gui_structure.aim_custom.widget.click()
-    file = 'borefield_data.csv'
+    file = f'{FOLDER}/test_gui/borefield_data.csv'
     main_window.gui_structure.borefield_file.set_value(file)
     main_window.gui_structure.option_seperator_borefield.set_value(1)
     main_window.gui_structure.option_decimal_borefield.set_value(0)

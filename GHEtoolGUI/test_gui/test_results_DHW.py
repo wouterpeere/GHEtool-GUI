@@ -1,4 +1,5 @@
 from GHEtoolGUI.test_gui.starting_closing_tests import close_tests, start_tests
+from GHEtoolGUI import FOLDER
 
 
 def test_results_DHW(qtbot):
@@ -13,8 +14,8 @@ def test_results_DHW(qtbot):
     main_window.gui_structure.option_decimal_csv.set_value(0)
     main_window.gui_structure.option_seperator_csv.set_value(0)
 
-    main_window.gui_structure.option_filename.set_value('hourly_profile.csv')
-    main_window.gui_structure.fun_update_combo_box_data_file('hourly_profile.csv')
+    main_window.gui_structure.option_filename.set_value(f'{FOLDER}/Examples/hourly_profile.csv')
+    main_window.gui_structure.fun_update_combo_box_data_file(f'{FOLDER}/Examples/hourly_profile.csv')
     main_window.gui_structure.option_column.set_value(1)
     main_window.gui_structure.option_cooling_column.set_value(1)
 

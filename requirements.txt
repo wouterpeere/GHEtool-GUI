@@ -1,4 +1,4 @@
-GHEtool>=2.2.0
+GHEtool==2.2.1
 ScenarioGUI>=0.3.0.2
 PySide6>=6.6.0
 pandas>=1.4.3
