@@ -8,7 +8,7 @@
 
 This repository contains a Graphical User Interface for the python package [GHEtool](https://github.com/wouterpeere/GHEtool).
 It is an open-source alternative for the professional version of GHEtool, which can be found on the website [https://ghetool.eu](https://ghetool.eu).
-This GUI is built using [ScenarioGUI](https://github.com/tblanke/ScenarioGUI) and can be downloaded as an executable [here](https://ghetool.eu/wp-content/uploads/setups/GHEtool%20Community_setup_v2_2_0.exe).
+This GUI is built using [ScenarioGUI](https://github.com/tblanke/ScenarioGUI) and can be downloaded as an executable [here](https://ghetool.eu/community/).
 
 **Please note that this version is developed and maintained by the community and has no official support from the developers of GHEtool Pro.**
 
